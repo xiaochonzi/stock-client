@@ -1,5 +1,5 @@
 # 大师兄股票行情工具重构版
-使用springboot+netty同步实时行情，redis多数据源保存实时行情数据，mongodbb保存K线数据。
+使用springboot+netty同步实时行情，redis多数据源保存实时行情数据，mongodb保存K线数据。
 
 
 原大师兄行情工具

@@ -53,7 +53,7 @@ public class SynKlineTask {
     @Autowired
     private Executor executor;
 
-    @Scheduled(cron = "0 30 15 * * 1-5")
+    @Scheduled(cron = "0 30 15 * * 1-6")
     public void synKline() {
         Set<String> rows = redisFactory.select(RedisDB.STOCK_TREE_DATA).keys("*");
         for (String row : rows) {
