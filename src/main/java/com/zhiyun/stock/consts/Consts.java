@@ -19,8 +19,4 @@ public class Consts {
     // 发送数据的换行符
     public static final String writeEnd = "######\r\n######";
 
-    // 协议
-    public static String serverHost = "114.55.140.140";
-
-    public static int serverPort = 9099;
 }

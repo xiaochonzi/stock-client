@@ -64,13 +64,13 @@ public class NettyClient {
             public void operationComplete(ChannelFuture future) throws Exception {
                 // 连接失败
                 if (!future.isSuccess()) {
-                    log.error("[start][Netty Client 连接服务器({}:{}) 失败]", Consts.serverHost, Consts.serverPort);
+                    log.error("[start][Netty Client 连接服务器({}:{}) 失败]", server.getHost(), server.getPort());
                     reconnect();
                     return;
                 }
                 // 连接成功
                 channel = future.channel();
-                log.info("[start][Netty Client 连接服务器({}:{}) 成功]", Consts.serverHost, Consts.serverPort);
+                log.info("[start][Netty Client 连接服务器({}:{}) 成功]", server.getHost(), server.getPort());
             }
         });
     }
